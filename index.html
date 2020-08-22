@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3 | Activity Status</title>
+  <!---------/ Bulma v0.9.0 CDN /---------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <!---------/ Font-Awesome v5.14.0 CDN /-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <!---------/ Header / Form /--------->
+  <section class="hero is-info is-bold">
+    
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+      
+            <div class="field mt-4">
+              <label class="label title is-5 has-text-black">Weapon of Choice</label>
+              <div class="control has-icons-left">
+                <input class="input is-success" type="text" placeholder="Weapon of Choice" id="weapon">
+                <span class="icon is-left">
+                  <i class="fas fa-code"></i>
+                </span>
+              </div>
+            </div>
+            
+            <div class="field mt-4">
+              <label class="label title is-5 has-text-black">Favorite Food</label>
+              <div class="control has-icons-left">
+                <input class="input is-success" type="text" placeholder="Favorite Food" id="food">
+                <span class="icon is-left">
+                  <i class="fas fa-pizza-slice"></i>
+                </span>
+              </div>
+            </div>
+            
+            <div class="control">
+              <button class="button is-success is-medium has-text-dark mt-4 px-6" id="submit-button">Submit</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+
+  <!-----/ Content /------>
+  <section class="section">
+
+    <nav class="level">
+
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading"> Awesome Level </p>
+          <p class="title"> 💩 100% </p>
+        </div>
+      </div>
+
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading"> Weapon of Choice </p>
+          <p class="title" id="weapon-text"></p>
+        </div>
+      </div>
+      
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading"> Favorite Food </p>
+          <p class="title" id="food-text"></p>
+        </div>
+      </div>
+
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading"> Current Status </p>
+          <p class="title" id="current-status"></p>
+        </div>
+      </div>
+
+    </nav>
+
+  </section>
+
+
+  <!---------/ Javascript /---------->
+  <script defer src="app.js"></script>
+
+</body>
+
+</html>
